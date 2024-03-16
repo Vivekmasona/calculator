@@ -1,28 +1,28 @@
 {
-    "name": "RedCherry",
-    "short_name": "RedCherry",
-    "description": "RedCherry Simple PWA",
+    "name": "calender",
+    "short_name": "calender",
+    "description": "created by dristi",
     "icons": [
         {
-            "src": "img/fav-192.png",
+            "src": "img/c.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any maskable"
         },
         {
-            "src": "img/fav-512.png",
+            "src": "img/c.png",
             "sizes": "512x512",
             "type": "image/png"
         }
     ],
     "screenshots": [
         {
-            "src": "img/screenshot-1.jpg",
+            "src": "img/s.jpg",
             "sizes": "1000x1600",
             "type": "image/jpeg"
         },
         {
-            "src": "img/screenshot-2.jpg",
+            "src": "img/s2.jpg",
             "sizes": "1000x1600",
             "type": "image/jpeg"
         }
