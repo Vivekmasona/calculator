@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Scientific Calculator</title>
+  <link rel="stylesheet" href="styles/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>SciCalc</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="active" data-tab="calculator">
+            <i class="fas fa-calculator"></i>
+            <span>Calculator</span>
+          </li>
+          <li data-tab="profile">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+          </li>
+          <li data-tab="history">
+            <i class="fas fa-history"></i>
+            <span>History</span>
+          </li>
+          <li id="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="dashboard-header">
+        <div class="user-welcome">
+          <h2>Welcome, <span id="userName">User</span>!</h2>
+        </div>
+      </header>
+      
+      <div class="tab-content active" id="calculator-tab">
+        <div class="calculator-container">
+          <div class="calculator-header">
+            <h3>Scientific Calculator</h3>
+            <p>Powered by Wolfram Alpha</p>
+          </div>
+          <div class="calculator">
+            <div class="calculator-display">
+              <input type="text" id="calculatorInput" placeholder="Enter expression...">
+              <button id="calculateBtn">Calculate</button>
+            </div>
+            <div class="calculator-result" id="calculatorResult">
+              <div class="result-placeholder">Results will appear here</div>
+            </div>
+            <div class="calculator-buttons">
+              <div class="button-row">
+                <button class="calc-btn function">sin</button>
+                <button class="calc-btn function">cos</button>
+                <button class="calc-btn function">tan</button>
+                <button class="calc-btn operator">^</button>
+              </div>
+              <div class="button-row">
+                <button class="calc-btn function">log</button>
+                <button class="calc-btn function">ln</button>
+                <button class="calc-btn operator">(</button>
+                <button class="calc-btn operator">)</button>
+              </div>
+              <div class="button-row">
+                <button class="calc-btn number">7</button>
+                <button class="calc-btn number">8</button>
+                <button class="calc-btn number">9</button>
+                <button class="calc-btn operator">÷</button>
+              </div>
+              <div class="button-row">
+                <button class="calc-btn number">4</button>
+                <button class="calc-btn number">5</button>
+                <button class="calc-btn number">6</button>
+                <button class="calc-btn operator">×</button>
+              </div>
+              <div class="button-row">
+                <button class="calc-btn number">1</button>
+                <button class="calc-btn number">2</button>
+                <button class="calc-btn number">3</button>
+                <button class="calc-btn operator">-</button>
+              </div>
+              <div class="button-row">
+                <button class="calc-btn number">0</button>
+                <button class="calc-btn number">.</button>
+                <button class="calc-btn clear">C</button>
+                <button class="calc-btn operator">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="profile-tab">
+        <div class="profile-container">
+          <h3>User Profile</h3>
+          <div class="profile-info">
+            <div class="profile-avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="profile-details">
+              <div class="profile-field">
+                <label>Name:</label>
+                <p id="profileName">Loading...</p>
+              </div>
+              <div class="profile-field">
+                <label>Email:</label>
+                <p id="profileEmail">Loading...</p>
+              </div>
+              <div class="profile-field">
+                <label>Account Created:</label>
+                <p id="profileCreated">Loading...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="history-tab">
+        <div class="history-container">
+          <h3>Calculation History</h3>
+          <div class="history-list" id="historyList">
+            <p class="empty-history">No calculations yet</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
+
